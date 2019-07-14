@@ -5,13 +5,41 @@
 	<title>Hola mundo!</title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="general-styles.css" />
+
 </head>
 
 <body>
 	<div id="app"></div> 
 	<h1 class="title">Holaa </h1>
 	<h1 id="miruna">Miruna es amarilla</h1>
+	<button id="button" onclick="dragosFunction()">Lie to me</button>
+		<!-- Miruna -->
+		 <h1 class="title" id="title">I don´t have a clue of what I am doing</h1>
+		 
+		 <button id="buttonM" onclick="mirunaFunction()" class="btn btn-primary">Press me</button>
+		
+		<!-- Olga -->
+		<h1 class="myOwnTittle" id="myOwnTittle">My life is ruin!!</h1>
+		<div style="width: 100%;">
+			<button id="buttonOlga" class="pink" onclick="olgaFunction()" style="margin-left: auto; margin-right: auto;">Tell me the truth</button>
+		</div>
 	<script src="src/index.js">
+	</script>
+	<script>
+
+	function dragosFunction() {
+		  document.getElementById("miruna").style.color = "red";
+			document.getElementById("miruna").innerHTML = "Actually I am Olga!";
+		}	
+		function olgaFunction(){
+			document.getElementById("myOwnTittle").style.color = "yellow";
+			document.getElementById("myOwnTittle").innerHTML = "Don't over react. Drama queen!!";
+		}
+
+		function mirunaFunction(){
+			document.getElementById("title").style.color = "green";
+			document.getElementById("title").innerHTML ="Blablabla";
+		}
 	</script>
 </body>
 

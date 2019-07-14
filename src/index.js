@@ -7,7 +7,3 @@ document.getElementById("app").innerHTML = `
   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 </div>
 `;
-
-console.log("first");
-console.log("The pig is watchin you!!");
-console.log("Piggy is watching me, he defietly needs to eat more salad!");
