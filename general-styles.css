@@ -1,5 +1,6 @@
 .title {
   color: red;
+  font-sized: 14px;
 }
 #miruna {
   color: yellow;
@@ -15,4 +16,12 @@
 .pink {
   color: redk;
   font-size: 12px;
+  border-radius: 10px;
+}
+
+div > p {
+  color: green !important;
+}
+div > h2 {
+  color: blue;
 }

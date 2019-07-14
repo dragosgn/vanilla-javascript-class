@@ -4,14 +4,23 @@
 <head>
 	<title>Hola mundo!</title>
 	<meta charset="UTF-8" />
-	<link rel="stylesheet" type="text/css" href="general-styles.css" />
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="general-styles.css" />
 </head>
 
 <body>
 	<div id="app"></div> 
+	<button onclick="tomaLacasitos()">Toma lacasitos!</button>
+	<div id="lacasitosBox">Lacasitos box</div>
+	<div id="fruitsBox">Fruit box</div>
 	<h1 class="title">Holaa </h1>
 	<h1 id="miruna">Miruna es amarilla</h1>
+	<h2>Esto no debería ser azul</h2>
+	<div>
+		<h2>El cielo es azul</h2>
+		<p>La hierba es verde</p>
+	</div>
 	<button id="button" onclick="dragosFunction()">Lie to me</button>
 		<!-- Miruna -->
 		 <h1 class="title" id="title">I don´t have a clue of what I am doing</h1>
@@ -23,8 +32,10 @@
 		<div style="width: 100%;">
 			<button id="buttonOlga" class="pink" onclick="olgaFunction()" style="margin-left: auto; margin-right: auto;">Tell me the truth</button>
 		</div>
+
 	<script src="src/index.js">
 	</script>
+
 	<script>
 
 	function dragosFunction() {
@@ -40,6 +51,25 @@
 			document.getElementById("title").style.color = "green";
 			document.getElementById("title").innerHTML ="Blablabla";
 		}
+
+		function tomaLacasitos() {
+
+			var lacasito = document.createElement("P");
+
+			lacasito.innerHTML = "Lacasito";
+
+			document.getElementById("lacasitosBox").appendChild(lacasito);
+	
+		}
+
+			var fruits = ["banana", "orange", "papaya", "higo", "mango"]; 
+			var fruitsLength = fruits.length;
+			for(var i = 0; i < fruitsLength; i++) { 
+			 		var fruit = document.createElement("P");
+			 		fruit.innerHTML = fruits[i];
+			 		document.getElementById("fruitsBox").appendChild(fruit);
+				}
+
 	</script>
 </body>
 
